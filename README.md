@@ -9,7 +9,7 @@ This tutorial explains how to set up the tools and accounts our team uses to wri
 
 CAUTION: The following information is copied from the 2019 tutorial and is subject to change this year.  Once this tutorial has been updated with this year's plan, this caution notice will be removed.
 
-Because the FRC Driver Station runs only on Windows, most of us have chosen to do our programming in Windows as well.  You are free to use Mac OSX, but these instructions will cover only Windows installations.
+Because the [FRC Driver Station](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#frc-driver-station-powered-by-ni-labview-windows-only) runs only on Windows, most of us have chosen to do our programming in Windows as well.  You are free to use Mac OSX, but these instructions will cover only Windows installations.
 
 ### Software to download (CAUTION: subject to change)
 * [Slack](https://slack.com/downloads) - You might want both a desktop and a mobile version of slack since we use this for team communication
