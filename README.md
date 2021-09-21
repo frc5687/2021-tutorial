@@ -1,6 +1,8 @@
 # 2021-tutorial
 Tutorial for 2021-2022 school year to help students start programming (controls)
 
+FRC stands for "FIRST Robotics Competition."  The basis for this competition is a standardized robotic framework that includes a National Instruments [roboRIO](https://www.ni.com/en-us/support/model.roborio.html) controller.  We're writing code to load onto a roboRIO to control our robot.
+
 ## Getting Started
 
 This tutorial explains how to set up the tools and accounts our team uses to write code to control our robot.  For a more general introduction to writing code to control robots like ours, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/).  See below for more links to interesting sections of the FRC control system documentation.
@@ -43,8 +45,6 @@ You may also be required to create Atlassian, Oracle, and JetBrains accounts in 
 * general - messages for the whole robotics team
 
 ## FRC Control System Documentation
-
-FRC stands for "FIRST Robotics Competition."  The basis for this competition is a standardized robotic framework that includes a National Instruments [roboRIO](https://www.ni.com/en-us/support/model.roborio.html) controller.  We're writing code to load onto this roboRIO, then it controls the robot.
 
 For coders, these are useful sections of the [FRC Control System documentation](https://docs.wpilib.org/en/stable/):
 
