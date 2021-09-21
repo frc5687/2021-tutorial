@@ -3,6 +3,8 @@ Tutorial for 2021-2022 school year to help students start programming (controls)
 
 ## Getting Started
 
+This tutorial explains how to set up the tools and accounts our team uses to write code to control our robot.  For a more general introduction to writing code to control robots like ours, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/).
+
 ### Note
 
 CAUTION: The following information is copied from the 2019 tutorial and is subject to change this year.  Once this tutorial has been updated with this year's plan, this caution notice will be removed.
@@ -10,15 +12,16 @@ CAUTION: The following information is copied from the 2019 tutorial and is subje
 Because the FRC Driver Station runs only on Windows, most of us have chosen to do our programming in Windows as well.  You are free to use Mac OSX, but these instructions will cover only Windows installations.
 
 ### Software to download
+* [Slack](https://slack.com/downloads) - You might want both a desktop and a mobile version of slack since we use this for team communication
 * [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html) - Accept the license terms and select the latest stable Windows x64 build (jdk-?????-windows-x64.exe). 
+* [VSCode](https://code.visualstudio.com/) - Download the latest stable build
 * [IntelliJ](https://www.jetbrains.com/idea/download/) - Download the Windows Community edition
 * [Gradle](https://gradle.org/gradle-download/) - Choose the "Binary only distribution"
 * [SourceTree](https://www.sourcetreeapp.com/) - Just click the green Download for Windows button
 * [git](https://git-scm.com/)
-* [Slack](https://slack.com/downloads) - optional
 
 ### Accounts you will need
-* Slack - if you aren't on slack, please reach out to Ben
+* Slack - If you aren't on slack, please talk with or email a student on the team so they can make sure you get added to the right channels
 * [GitHub](https://github.com/join?source=header) - Once you have created your account, let Ben know so we can add you to the team
 You may also be required to create Atlassian, Oracle, and JetBrains accounts in order to download their tools.
 
@@ -32,3 +35,9 @@ You may also be required to create Atlassian, Oracle, and JetBrains accounts in 
 7. Open the project in IntelliJ
 8. Build the project
 9. Do a test deploy
+
+### Communication channels on slack
+
+* controls - for discussions about programming the robot
+* github - for pull requests (code changes you want the team to review)
+* general - messages for the whole robotics team
