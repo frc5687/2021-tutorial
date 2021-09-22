@@ -51,5 +51,10 @@ For coders, these are useful sections of the [FRC Control System documentation](
 * [What is WPILib?](https://docs.wpilib.org/en/stable/docs/software/what-is-wpilib.html)
 * [roboRIO Introduction](https://docs.wpilib.org/en/stable/docs/software/roborio-info/roborio-introduction.html)
 * [Software Component Overview](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html)
+* [Creating a Robot Program](https://docs.wpilib.org/en/stable/docs/software/vscode-overview/creating-robot-program.html)
+  - TimedRobot
+  - RobotBase
+  - Command Robot
+  - Romi
 * [Robot Simulation](https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/robot-simulation/introduction.html)
 * [Imaging your roboRIO](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/imaging-your-roborio.html)
