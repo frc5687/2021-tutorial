@@ -45,11 +45,7 @@ This year we are switching our recommended [integrated development environment (
 
 ### Software to download
 * [Slack](https://slack.com/downloads) - You might want both a desktop and a mobile version of slack since we use this for team communication
-* [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html) - Accept the license terms and select the latest stable Windows x64 build (jdk-?????-windows-x64.exe). 
-* [git](https://git-scm.com/)
-* [VSCode](https://code.visualstudio.com/) - Download the latest stable build
 * [WPILib](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html)
-* [Gradle](https://gradle.org/gradle-download/) - Choose the "Binary only distribution"
 * [SourceTree](https://www.sourcetreeapp.com/) - (optional) Just click the green Download for Windows button
 
 ### Accounts you will need
@@ -58,16 +54,16 @@ This year we are switching our recommended [integrated development environment (
 * You may also be required to create Atlassian, Oracle, and JetBrains accounts in order to download their tools.
 
 ### Setting up your tools
-1. Be sure you have all the software mentioned above downloaded and accounts created
-2. Install Java
-3. Install git
-4. Install VSCode
-5. Install Gradle
-6. Install SourceTree
-6. Checkout the 2019-tutorial project
-7. Open the project in VSCode
-8. NOT READY YET (We'll be adding basic robot code) Build the project
-9. NOT RREADY YET (We'll be adding instructions for how to deploy code to the robot) Do a test deploy
+1. [Install WPILib](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html)
+2. Download VS Code for Single Install
+3. Install these tools:
+
+  - [x] Visual Studio Code
+  - [x] Gradle
+  - [x] Java JDK/JRE
+  - [x] Tools and Utilities
+  - [x] WPILib Dependencies
+  - [x] Visual Studio Code Extensions
 
 ## Communication channels on slack
 
