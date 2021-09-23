@@ -48,6 +48,7 @@ This year we are switching our recommended [integrated development environment (
 * [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html) - Accept the license terms and select the latest stable Windows x64 build (jdk-?????-windows-x64.exe). 
 * [git](https://git-scm.com/)
 * [VSCode](https://code.visualstudio.com/) - Download the latest stable build
+* [WPILib](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html)
 * [Gradle](https://gradle.org/gradle-download/) - Choose the "Binary only distribution"
 * [SourceTree](https://www.sourcetreeapp.com/) - (optional) Just click the green Download for Windows button
 
