@@ -45,7 +45,7 @@ This year we are switching our recommended [integrated development environment (
 
 ### Software to download
 * [Slack](https://slack.com/downloads) - You might want both a desktop and a mobile version of slack since we use this for team communication
-* [WPILib](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html)
+* [WPILib](https://github.com/wpilibsuite/allwpilib/releases/tag/v2021.3.1)
 * [SourceTree](https://www.sourcetreeapp.com/) - (optional) Just click the green Download for Windows button
 
 ### Accounts you will need
