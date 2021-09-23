@@ -54,20 +54,22 @@ This year we are switching our recommended [integrated development environment (
 
 ### Accounts you will need
 * Slack - If you aren't on slack, please talk with or email a student on the team so they can make sure you get added to the right channels
-* [GitHub](https://github.com/join?source=header) - Once you have created your account, let Ben know so we can add you to the team
+* [GitHub](https://github.com/join?source=header) - Once you have created your account, let Ben Bernard know so we can add you to the team
 * You may also be required to create Atlassian, Oracle, and JetBrains accounts in order to download their tools.
 
 ### Setting up your tools
+All tool setup is dependent on insureing that you have Admin rights on your local machine. If you don't have admin right please see Amos Cooper to get that sussed out.
 1. Be sure you have all the software mentioned above downloaded and accounts created
 2. Install Java
 3. Install git
 4. Install VSCode
 5. Install Gradle
 6. Install SourceTree
-6. Checkout the 2019-tutorial project
-7. Open the project in VSCode
-8. NOT READY YET (We'll be adding basic robot code) Build the project
-9. NOT RREADY YET (We'll be adding instructions for how to deploy code to the robot) Do a test deploy
+6. Checkout the 2019-tutorial project or the 2021 project.
+8. Open the project in VSCode
+9. NOT READY YET (We'll be adding basic robot code) Build the project
+10. NOT READY YET (We'll be adding instructions on how to run desktop simulations of the robot it insure working code.
+11. NOT RREADY YET (We'll be adding instructions for how to deploy code to the robot) Do a test deploy
 
 ## Communication channels on slack
 
