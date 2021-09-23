@@ -44,9 +44,9 @@ Because the [FRC Driver Station](https://docs.wpilib.org/en/stable/docs/controls
 This year we are switching our recommended [integrated development environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment) from [IntelliJ IDEA](https://www.jetbrains.com/idea/) to [Visual Studio Code (VSCode)](https://code.visualstudio.com/).  You are welcome to use IntelliJ (or Eclipse, emacs or vim) if you'd prefer, but this tutorial assumes you're coding in VSCode.  If you don't already have a preference for your programming environment, start with VSCode.
 
 ### Software to download
-* [Slack](https://slack.com/downloads) - You might want both a desktop and a mobile version of slack since we use this for team communication
-* [WPILib](https://github.com/wpilibsuite/allwpilib/releases/tag/v2021.3.1) - make sure this is the latest release
-* [SourceTree](https://www.sourcetreeapp.com/) - (optional) Just click the green Download for Windows button
+* [Slack](https://slack.com/downloads) - for team communication.  You might want both a desktop and a mobile version of slack since we use this for team communication.
+* [WPILib](https://github.com/wpilibsuite/allwpilib/releases/tag/v2021.3.1) - for tools and libraries we use in our code.  Make sure to get the latest release.
+* [SourceTree](https://www.sourcetreeapp.com/) - for working with GitHub repositories.  (optional)
 
 ### Accounts you will need
 * Slack - If you aren't on slack, please talk with or email a student on the team so they can make sure you get added to the right channels
@@ -74,6 +74,14 @@ We'll be adding instructions for the following:
 * Building a project
 * Running a desktop simulation of the robot before loading code onto a real robot
 * Deploying code to the real robot
+
+### Practicing with GitHub for Version Control
+
+If you're new to the team, one of the things you need to learn is [how to use GitHub for version control](https://www.howtogeek.com/180167/htg-explains-what-is-github-and-what-do-geeks-use-it-for/).
+
+Our team has a practice repository called [learngit](https://github.com/frc5687/learngit).  Use the learngit repo to learn how to use GitHub to [clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository), [track issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues), [manage branches](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches) and create [pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+
+Feel free to mess around as much as you want in learngit.  You won't mess anything up!  It's there for you to practice your git skills and learn how to share your code with other people on the team.
 
 ## Communication channels on slack
 
