@@ -41,7 +41,7 @@ Now that you understand a little Java, here's how to set up the programming tool
 
 Because the [FRC Driver Station](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#frc-driver-station-powered-by-ni-labview-windows-only) runs only on Windows, in the past most programming has been done in Windows as well.  You are free to use MacOS or Linux to code, but if you do you won't have access to the full suite of tools FRC provides.
 
-This year we are switching our recommended [integrated development environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment) from [IntelliJ IDEA](https://www.jetbrains.com/idea/) to [Virtual Studio Code (VSCode)](https://code.visualstudio.com/).  You are welcome to use IntelliJ (or Eclipse or emacs or vi) if you'd prefer, but this tutorial assumes you're coding in VSCode.  If you don't already have a preference for your programming environment, start with VSCode.
+This year we are switching our recommended [integrated development environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment) from [IntelliJ IDEA](https://www.jetbrains.com/idea/) to [Virtual Studio Code (VSCode)](https://code.visualstudio.com/).  You are welcome to use IntelliJ (or Eclipse, emacs or vim) if you'd prefer, but this tutorial assumes you're coding in VSCode.  If you don't already have a preference for your programming environment, start with VSCode.
 
 ### Software to download
 * [Slack](https://slack.com/downloads) - You might want both a desktop and a mobile version of slack since we use this for team communication
@@ -50,7 +50,7 @@ This year we are switching our recommended [integrated development environment (
 
 ### Accounts you will need
 * Slack - If you aren't on slack, please talk with or email a student on the team so they can make sure you get added to the right channels
-* [GitHub](https://github.com/join?source=header) - Once you have created your account, let Ben know so we can add you to the team
+* [GitHub](https://github.com/join?source=header) - Once you have created your account, let Ben Bernard know so we can add you to the team
 * You may also be required to create Atlassian, Oracle, and JetBrains accounts in order to download their tools.
 
 ### Setting up your tools
@@ -64,6 +64,18 @@ This year we are switching our recommended [integrated development environment (
   - [x] Tools and Utilities
   - [x] WPILib Dependencies
   - [x] Visual Studio Code Extensions
+All tool setup is dependent on insureing that you have Admin rights on your local machine. If you don't have admin right please see Amos Cooper to get that sussed out.
+1. Be sure you have all the software mentioned above downloaded and accounts created
+2. Install Java
+3. Install git
+4. Install VSCode
+5. Install Gradle
+6. Install SourceTree
+6. Checkout the 2019-tutorial project or the 2021 project.
+8. Open the project in VSCode
+9. NOT READY YET (We'll be adding basic robot code) Build the project
+10. NOT READY YET (We'll be adding instructions on how to run desktop simulations of the robot it insure working code.
+11. NOT RREADY YET (We'll be adding instructions for how to deploy code to the robot) Do a test deploy
 
 ## Communication channels on slack
 
