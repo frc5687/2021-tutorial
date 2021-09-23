@@ -54,6 +54,9 @@ This year we are switching our recommended [integrated development environment (
 * You may also be required to create Atlassian, Oracle, and JetBrains accounts in order to download their tools.
 
 ### Setting up your tools
+
+Note: All tool setup is dependent on having Admin rights on your local machine. If you don't have admin right please see Amos Cooper to get that sussed out.
+
 1. [Install WPILib](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html)
 2. Download VS Code for Single Install
 3. Install these tools:
@@ -64,18 +67,13 @@ This year we are switching our recommended [integrated development environment (
   - [x] Tools and Utilities
   - [x] WPILib Dependencies
   - [x] Visual Studio Code Extensions
-All tool setup is dependent on insureing that you have Admin rights on your local machine. If you don't have admin right please see Amos Cooper to get that sussed out.
-1. Be sure you have all the software mentioned above downloaded and accounts created
-2. Install Java
-3. Install git
-4. Install VSCode
-5. Install Gradle
-6. Install SourceTree
-6. Checkout the 2019-tutorial project or the 2021 project.
-8. Open the project in VSCode
-9. NOT READY YET (We'll be adding basic robot code) Build the project
-10. NOT READY YET (We'll be adding instructions on how to run desktop simulations of the robot it insure working code.
-11. NOT RREADY YET (We'll be adding instructions for how to deploy code to the robot) Do a test deploy
+
+We'll be adding instructions for the following:
+
+* Checking out a repo from GitHub
+* Building a project
+* Running a desktop simulation of the robot before loading code onto a real robot
+* Deploying code to the real robot
 
 ## Communication channels on slack
 
