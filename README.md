@@ -104,6 +104,7 @@ For coders, these are useful sections of the [FRC Control System documentation](
 * [Robot Simulation](https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/robot-simulation/introduction.html)
 * [Imaging your roboRIO](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/imaging-your-roborio.html)
 * [Building and Deploying Robot Code](https://docs.wpilib.org/en/stable/docs/software/vscode-overview/deploying-robot-code.html)
+* [Debugging a Robot Program](https://docs.wpilib.org/en/stable/docs/software/vscode-overview/debugging-robot-program.html)
 
 ### FRC Game Tools
 
@@ -126,6 +127,7 @@ Term | Definition
 loop overrun | This happens when your code tries to do too much in the limited time available for each main event loop.  Unlike most software programs, which can take as much time as they want to complete a task, the code we're writing is running on a real-time operating system that is controlling a machine moving quickly through space.  Things need to happen on a predictable and dependable schedule.  For example, you may need to send signals to eight motors to send the robot in the right direction at the right speed.  The robot won't work right if your code is so complicated that you only have time each loop to calculate seven of the eight signals you need to send.  The standard loop time for FRC code is 20 milliseconds, i.e. all of the code you put in one loop must complete within 20 milliseconds or a loop overrun will occur.
 millisecond (ms) | One one-thousandth of a second.  The standard FRC loop time is 20 milliseconds, or 2 hundredths of a second, or 50 loops per second.
 repo | Short for repository, this is a collection of code that you can check out and check in as a unit.  The code for each robot is stored in a separate repo.
+unit testing | One of the best ways to prevent having to debug too many issues at once is to do [unit testing](https://en.wikipedia.org/wiki/Unit_testing).  This means breaking down what our code should do into small, discrete pieces that can be tested one at a time by automated tools.  Then, when a change is made, these tests can be run to see if it breaks anything.
 VS Code | Visual Studio Code, an integrated development environment for writing software.  This combines a programming editor with syntax highlighting, plus tools for revision control, as well as building, running and debugging code.
 version control | Also called "revision control," this is a system for keeping track of changes to a project. GitHub is the host we use for version control, and VS Code is one of the client programs we use to check out and check in code stored on GitHub.  All changes to our code are tracked so that you can see exactly what changed and who changed it between versions.
 WPILib | This is the library of code that we use to control our robot.  Rather than reinventing the wheel, we start with code that other people have developed, and add our own enhancements to control the hardware we build.  WPI stands for the [Worcester Polytechnic Institute](https://www.wpi.edu/) in [Worcester, Massachusetts](https://en.wikipedia.org/wiki/Worcester,_Massachusetts).
