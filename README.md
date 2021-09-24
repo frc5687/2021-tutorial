@@ -108,3 +108,13 @@ For coders, these are useful sections of the [FRC Control System documentation](
 ### FRC Game Tools
 
 A Windows computer with the [FRC Game Tools](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/frc-game-tools.html) installed on it is necessary for loading code onto the robot (imaging the roboRIO) and controlling the robot during competition.  The [FRC Driver Station](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#frc-driver-station-powered-by-ni-labview-windows-only) is the only software allowed to be used to control the state of the robot during competition.
+
+## Meet the Robots
+
+COMING SOON!
+
+Team, please add pictures and a description of each working robot we have available.  In the description, explain which repo to use for each robot.
+
+The code for each robot is different because each robot has a different set of hardware (motors, sensors, etc.) and each robot has a different set of behaviors depending on the game and its role on an alliance.  The [rules of the game](https://www.firstinspires.org/robotics/frc/game-and-season) for this year will be announced in December / January, but typically games consist of two teams of three robots.  On each team robots can specialize on "offense" (scoring points for your own team) or "defense" (preventing the other team from scoring points), or be a generalist and be able to play offense or defense as needed.
+
+Robots can usually operate in two modes: autonomous and teleoperated.  For the first part of each match, the robots run the code we write to accomplish tasks on their own without human input.  After the autonomous period, human drivers and operators can use joysticks to send radio signals to the robots to operate as remote-controlled machines.  We usually write code to help the human drivers and operators -- for example, pushing a button might have the robot automatically lock onto a target to launch balls at it.  In "target-lock" mode, the human driver might be able to move the robot all over the field of play to scoop up more balls, but our controls code keeps the robot pointing at the target so the human operator can launch balls once they've been picked up by the intake mechanism and are ready to launch.
