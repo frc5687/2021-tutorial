@@ -61,12 +61,12 @@ Note: All tool setup is dependent on having Admin rights on your local machine. 
 2. Download VS Code for Single Install
 3. Install these tools:
 
-  - [x] Visual Studio Code
-  - [x] Gradle
-  - [x] Java JDK/JRE
-  - [x] Tools and Utilities
-  - [x] WPILib Dependencies
-  - [x] Visual Studio Code Extensions
+  - [x] Visual Studio Code - for writing code
+  - [x] [Gradle](https://docs.gradle.org/current/userguide/userguide.html) - for building code
+  - [x] Java JDK/JRE - for compiling and running JAVA code
+  - [x] Tools and Utilities - various other things
+  - [x] WPILib Dependencies - stuff the library needs
+  - [x] Visual Studio Code Extensions - things that make it easier to write code
 
 We'll be adding instructions for the following:
 
@@ -137,6 +137,16 @@ Ideally the main branch will always compile, can be loaded onto the robot, gives
 ### Classes
 
 In general, we have one class per subsystem of the robot. Subsystems include the *drive*, which controls the four wheels on the robot platform that allow us to move the robot around the playing field, the *intake*, which controls the mechanism that allows us to pick up game pieces (usually balls), and the *shooter*, which controls the mechanism that allows us to launch balls to score points.  There are additional subsystems depending on the game and the hardware of our robot.
+
+### IDEAS and ROADMAP (New this year)
+
+This year we will be adding new files to our repo to document our ideas and plans.
+
+* We will have an **IDEAS folder** with a file for each coder on the team for you to write down ideas related to the code -- these can be algorithms you want to try, the "big picture" behind the way you implemented your code, or anything else that explains what you were thinking when you were working on the team code.  This is also a good place to jot down questions that you can answer later.  Use this folder for brainstorming and research and keeping track of different things you're trying.
+
+* We will put group decisions about code we plan to implement in a **ROADMAP file**.  Unlike the IDEAS folder, which is for brainstorming and researching ideas, the ROADMAP is for recording design decisions and goals we're committed to achieving as a team.
+
+The IDEAS and ROADMAP are in addition to comments we write in the code itself, and are also in addition to the GitHub issues we use to track bugs and feature requests.  The ROADMAP will have the overall plan; the GitHub issues will track details as we accomplish milestones in our ROADMAP.
 
 ## Glossary
 
