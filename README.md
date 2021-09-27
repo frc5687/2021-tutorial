@@ -1,6 +1,12 @@
 # 2021-tutorial
 Tutorial for 2021-2022 school year to help students start programming (controls)
 
+This year's tutorial contains a lot more overview material than usual because most of the students on our team are new to the FIRST Robotics Competition.  Don't worry if you don't understand everything at first!
+
+If you are a first-year student, you are welcome to just watch, or get involved as much as you want.  There are no expectations for first-year students; we recognize that you can learn a lot just by observing without the pressure of feeling like you need to code.  For sophomores and above, we will encourage you to jump in and help code.  The more effort you put in, the more authority and responsibility you will earn.  This year is a great opportunity to develop your skills as a programmer and to be a team player who can be counted on to meet reasonable (but sometimes challenging) expectations.
+
+## Background
+
 FRC stands for "FIRST Robotics Competition."  The basis for this competition is a standardized robotic framework that includes a National Instruments [roboRIO](https://forums.ni.com/t5/FIRST-Robotics-Competition/roboRIO-Details-and-Specifications/ta-p/3494658?profile.language=en) controller.  We're writing code to load onto a roboRIO to control our robot.
 
 FRC teams choose one of three ways to program their robots:
@@ -11,7 +17,7 @@ FRC teams choose one of three ways to program their robots:
 
 Our team's code base is in the [Java programming language](https://en.wikipedia.org/wiki/Java_(programming_language)).
 
-This tutorial explains how to set up the tools and accounts our team uses to write Java code to control our robot.  For a more general introduction to programming FRC robots, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/).  See below for links to interesting sections of those docs.
+This tutorial explains how our team writes Java code to control our robot.  For a more general introduction to programming FRC robots, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/).
 
 ## Learn Java
 
@@ -83,6 +89,21 @@ Our team has a practice repository called [learngit](https://github.com/frc5687/
 
 Feel free to mess around as much as you want in learngit.  You won't mess anything up!  It's there for you to practice your git skills and learn how to share your code with other people on the team.
 
+### Code to Review
+
+The [frc5687/2020-robot repo](https://github.com/frc5687/2020-robot) contains the code for our robot that competed in the "[Infinite Recharge](https://en.wikipedia.org/wiki/Infinite_Recharge)" season that was cut short in 2020.  This is a good repo to review to see how our team wrote code, [tracked issues](https://github.com/frc5687/2020-robot/issues) and [managed the project](https://github.com/frc5687/2020-robot/projects/1).
+
+This year we'll have a ROADMAP file in our repo to provide a quick overview of all of our milestones, but we'll also be using all the tools for [tracking milestones](https://github.com/frc5687/2020-robot/milestones) that GitHub provides.
+
+The best way to review the code is to ["clone" it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to check it out (i.e., copy it) to your local computer.
+
+But you can also browse the code online:
+
+* Start at [frc5687/2020-robot](https://github.com/frc5687/2020-robot)
+* [src/main](https://github.com/frc5687/2020-robot/tree/master/src/main)
+* [java/org/frc5687/infiniterecharge/robot](https://github.com/frc5687/2020-robot/tree/master/src/main/java/org/frc5687/infiniterecharge/robot)
+* Have fun exploring from there!
+
 ## Communication channels on slack
 
 * controls - for discussions about programming the robot
@@ -123,8 +144,6 @@ Robots can usually operate in two modes: autonomous and teleoperated.  For the f
 ## Controls Team Best Practices
 
 Over the years the controls team has developed best practices so we can meet the demands of developing code both **off-season**, when we can afford to explore new ideas because we are not under deadline to produce working code, and **during the season**, when our team is under intense time pressure to build a working robot and then iterate quickly to improve it.  In the off season (fall semester), our main goals are to identify and train the students who will be able to participate in coding during the season and plan our coding strategy for the upcoming season.  Once the season starts (after January), our goal is to write code that will help our alliance win matches during competitions.
-
-If you are a first-year student, you are welcome to just watch, or get involved as much as you want.  There are no expectations for first-year students; we recognize that you can learn a lot just by observing without the pressure of feeling like you need to code.  For sophomores and above, we do expect you to contribute to the team.  The more effort you put in, the more authority and responsibility you will earn.  We will encourage you to develop your skills as a programmer and as a team player who can be counted on to meet reasonable (but sometimes challenging) expectations.
 
 ### Repositories
 
