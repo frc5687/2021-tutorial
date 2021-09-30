@@ -201,6 +201,13 @@ This year we will be adding new files to our repo to document our ideas and plan
 
 The IDEAS and ROADMAP are in addition to comments we write in the code itself, and are also in addition to the GitHub issues we use to track bugs and feature requests.  The ROADMAP will have the overall plan; the GitHub issues will track details as we accomplish milestones in our ROADMAP.
 
+### Unit Testing (New this year)
+
+We will be adding unit tests for our code this year.  Read these tutorials to understand how to do unit testing with WPILibJ:
+
+* [Unit testing with WPILib](https://firstmncsa.org/2019/09/09/unit-testing-subsystems/)
+* [Unit Testing](https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/robot-simulation/unit-testing.html)
+
 ### Deploying Code During Competitions
 
 During competitions, we can only use our robot's WiFi network during a match, when our drive station computer will be communicating with our robot over our robot's WiFi network.  In the pits we can hook up a development machine to our robot with an Ethernet or USB cable to deploy code updates.
