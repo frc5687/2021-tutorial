@@ -1,6 +1,8 @@
 # 2021-tutorial
 Tutorial for 2021-2022 school year to help students start programming (controls)
 
+This tutorial explains how our team writes Java code to control our robot.  For a more general introduction to programming FRC robots, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/).
+
 This year's tutorial contains a lot more overview material than usual because most of the students on our team are new to the FIRST Robotics Competition.  Don't worry if you don't understand everything at first!
 
 If you are a first-year student, you are welcome to just watch, or get involved as much as you want.  There are no expectations for first-year students; we recognize that you can learn a lot just by observing without the pressure of feeling like you need to code.  For sophomores and above, we will encourage you to jump in and help code.  The more effort you put in, the more authority and responsibility you will earn.  This year is a great opportunity to develop your skills as a programmer and to be a team player who can be counted on to meet reasonable (but sometimes challenging) expectations.
@@ -16,8 +18,6 @@ FRC teams choose one of three ways to program their robots:
 3. C++
 
 Our team's code base is in the [Java programming language](https://en.wikipedia.org/wiki/Java_(programming_language)).
-
-This tutorial explains how our team writes Java code to control our robot.  For a more general introduction to programming FRC robots, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/).
 
 ## Learn Java
 
@@ -83,11 +83,11 @@ We'll be adding instructions for the following:
 
 ### Practicing with GitHub for Version Control
 
-If you're new to the team, one of the things you need to learn is [how to use GitHub for version control](https://www.howtogeek.com/180167/htg-explains-what-is-github-and-what-do-geeks-use-it-for/).
+Every coder on the team needs to know [how to use GitHub for version control](https://www.howtogeek.com/180167/htg-explains-what-is-github-and-what-do-geeks-use-it-for/).
 
 Our team has a practice repository called [learngit](https://github.com/frc5687/learngit).  Use the learngit repo to learn how to use GitHub to [clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository), [track issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues), [manage branches](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches) and create [pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
-Feel free to mess around as much as you want in learngit.  You won't mess anything up!  It's there for you to practice your git skills and learn how to share your code with other people on the team.
+Feel free to play around as much as you want in learngit.  You won't mess anything up!  It's there for you to practice your git skills and learn how to share your code with other people on the team.
 
 ### Code to Review
 
@@ -103,6 +103,20 @@ But you can also browse the code online:
 * [src/main](https://github.com/frc5687/2020-robot/tree/master/src/main)
 * [java/org/frc5687/infiniterecharge/robot](https://github.com/frc5687/2020-robot/tree/master/src/main/java/org/frc5687/infiniterecharge/robot)
 * Have fun exploring from there!
+
+## Deploying Code to the Robot
+
+We deploy code from a development machine (one of the computers that our student coders is using to write code) rather than from the drive station computer.  The first step is to check out the branch (either the main branch, an issue branch, or an event branch) you want to deploy so you have a local copy on your development machine.
+
+We have three ways to send information to our robot:
+
+1. Radio (WiFi)
+2. Ethernet cable
+3. USB cable
+
+Our robot (along with every other FRC robot) provides its own WiFi network. The name of the network for each robot (technically, the SSID or Service Set IDentifier) is the robot's name plus 5687.  When a robot is on you can find an open WiFi network with a recognizable name.
+
+To deploy code to the robot, join the robot's network, then run the build and deploy commands from vscode.  Under the hood, vscode calls gradle and performs all the steps necessary to bundle up the code and send it to the robot.
 
 ## Communication channels on slack
 
@@ -151,11 +165,31 @@ Code for each robot is kept in a separate repository.  For example, [frc5687/202
 
 ### Issue and Event Branches
 
+Create a new branch for every issue, and develop code on issue branches not the main branch.  Keep the main branch clean.  Merge pull requests from issue branches to the main branch.  Once an issue branch has been merged, delete the issue branch. That keeps our code from getting too bushy -- we don't want to have to wade through dozens of branches to find active ones where we need to get work done.
+
 Ideally the main branch will always compile, can be loaded onto the robot, gives us a working robot, and contains a record of our best ideas.  Obviously, sometimes we will break things, in which case we will roll back the main branch to the last known good release.  We create a new branch for issues, and a new branch for each event.  During events, we often discover bugs and need to make quick changes which we may or may not want to pull into our main branch.  Once we have an issue branch working and we're agreed it has good ideas in it, we pull it into the main branch.
+
+**Always leave the robot with main branch code on it.**  A typical programming testing session will look like the following:
+
+- Check out an issue branch.
+- Write some code to solve the issue.
+- Check in the issue branch to GitHub.
+- Deploy your issue branch code to the robot to test it.
+- Find bugs that will take a while to fix.
+- Check out the main branch.
+- Deploy main branch code to the robot so other teams have a working robot to play with.
+
+It's our responsibility as the controls team to always leave the robot in a known good working state.  Never end a programming session with issue branch code on the robot!
+
+We also always check in code to GitHub before we deploy so we have a commit ID and can determine exactly what code is running on the robot to help with issue resolution and debugging.  If we see the robot doing something weird, we can check the commit ID to find out which version of our code is running.
+
+### Code Reviews
+
+Two reviewers must approve a pull request before it is merged to the main branch.
 
 ### Classes
 
-In general, we have one class per subsystem of the robot. Subsystems include the *drive*, which controls the four wheels on the robot platform that allow us to move the robot around the playing field, the *intake*, which controls the mechanism that allows us to pick up game pieces (usually balls), and the *shooter*, which controls the mechanism that allows us to launch balls to score points.  There are additional subsystems depending on the game and the hardware of our robot.
+In general, we have one class per subsystem of the robot. Subsystems include *OI* (short for "Operator Input"), which is how we send signals to the robot to change its behavior, *drive*, which controls the four wheels on the robot platform that allow us to move the robot around the playing field, *intake*, which controls the mechanism that allows us to pick up game pieces (usually balls), and *shooter*, which controls the mechanism that allows us to launch balls to score points.  There are additional subsystems depending on the game and the hardware of our robot.
 
 ### IDEAS and ROADMAP (New this year)
 
@@ -166,6 +200,12 @@ This year we will be adding new files to our repo to document our ideas and plan
 * We will put group decisions about code we plan to implement in a **ROADMAP file**.  Unlike the IDEAS folder, which is for brainstorming and researching ideas, the ROADMAP is for recording design decisions and goals we're committed to achieving as a team.
 
 The IDEAS and ROADMAP are in addition to comments we write in the code itself, and are also in addition to the GitHub issues we use to track bugs and feature requests.  The ROADMAP will have the overall plan; the GitHub issues will track details as we accomplish milestones in our ROADMAP.
+
+### Deploying Code During Competitions
+
+During competitions, we can only use our robot's WiFi network during a match, when our drive station computer will be communicating with our robot over our robot's WiFi network.  In the pits we can hook up a development machine to our robot with an Ethernet or USB cable to deploy code updates.
+
+The reason we deploy code from a development machine and not from our drive station is that we keep our drive station computer with the drive team, which often needs to get ready for a match in a different location than the robot.  Rather than having to shuttle the drive station computer between the pit and the drive team, we keep the drive station computer with the drive team.
 
 ## Glossary
 
