@@ -207,6 +207,13 @@ During competitions, we can only use our robot's WiFi network during a match, wh
 
 The reason we deploy code from a development machine and not from our drive station is that we keep our drive station computer with the drive team, which often needs to get ready for a match in a different location than the robot.  Rather than having to shuttle the drive station computer between the pit and the drive team, we keep the drive station computer with the drive team.
 
+## Research / Scouting
+
+There is lots of great FRC code on GitHub!  Here are some teams that have done or are doing interesting things.
+
+* [https://github.com/Team5818/DiffSwerve](https://github.com/Team5818/DiffSwerve)
+* [https://github.com/Team254/FRC-2019-Public](https://github.com/Team254/FRC-2019-Public)
+
 ## Glossary
 
 Term | Definition
@@ -228,6 +235,7 @@ operator input (OI) | Throughout our codebase, OI means operator input from our 
 power distribution panel (PDP) | We can check the CAN bus to get information from the [power distribution panel (PDP)](https://docs.wpilib.org/en/stable/docs/software/can-devices/power-distribution-panel.html) about our robot's power situation, including current temparature, total current draw, and the draw of each device power channel.  This helps us manage our energy use intelligently so we can keep our robot running to win games.
 repo | Short for repository, this is a collection of code that you can check out and check in as a unit.  The code for each robot is stored in a separate repo.
 roboRIO | The [roboRIO](https://docs.wpilib.org/en/stable/docs/software/roborio-info/roborio-introduction.html) is the "brain" of our robot.  It is essentially a special-purpose computer designed for controlling robots.  Our team has several "[roboRIO 1.0](https://www.andymark.com/products/ni-roborio)" devices, which have now been discontinued; an upgraded "[roboRIO 2.0](https://www.firstinspires.org/robotics/frc/blog/2021-ni-guest-blog-roborio2-0)" is in the works from the company that makes them.  A roboRIO 1.0 includes a dual-core [Xilinx Zynq Z-7020](https://www.xilinx.com/content/dam/xilinx/support/documentation/selection-guides/zynq-7000-product-selection-guide.pdf) [ARM chip](https://en.wikipedia.org/wiki/ARM_architecture) running at 667 MHz, 256 MB of RAM and 512 MB of non-volatile memory.  A large number and type of ports are built in, as well as a 3-axis acceleromter.  The roboRIO 2.0 adds an SD card slot and promises an increase in processor speed and memory.
+Robot Operating System (ROS) | The [Robot Operating System (ROS)](https://www.ros.org/about-ros/) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms.
 Service Set IDentifier (SSID) | A WiFi network's *SSID* is the name you see in the list of available networks.
 tank drive | In *tank drive*, also known as "skid-steer" or "West Coast Drive," the left joystick controls the left motors and the right joystick controls the right motors. For example, if you want to make your robot turn right, push up on the left joystick and down on the right joystick.
 swerve drive | *Swerve Drive* is a drivetrain that allows the robot to rotate while traveling along any path across the terrain. Unlike a car, in which all wheels spin, but only the front wheels can turn, in a swerve drive robot, all four wheels can turn.  With each wheel being able to rotate around a vertical axis while spinning, the robot is highly maneuverable.  Along with greater maneuverability comes greater complexity in controlling the motors spinning and turning the wheels.
