@@ -1,13 +1,31 @@
 # 2021-tutorial
 Tutorial for 2021-2022 school year to help students start programming (controls)
 
+## Quick Start
+
+- Windows 10
+  - Download [WPILib_Windows64-2021.3.1.iso](https://github.com/wpilibsuite/allwpilib/releases/download/v2021.3.1/WPILib_Windows64-2021.3.1.iso)
+  - Right click on the downloaded disk image.
+  - Select Mount to open it.
+  - Launch WPILibInstaller.exe
+- MacOS
+  - Download [WPILib_macOS-2021.3.1.dmg](https://github.com/wpilibsuite/allwpilib/releases/download/v2021.3.1/WPILib_macOS-2021.3.1.dmg)
+  - Double click on the downloaded DMG.
+  - Select WPILibInstaller to launch the installer.
+
+After launching the installer for your operating system, follow the rest of the instructions in the [Installation Guide](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html).
+
+This will install VS Code with the WPILib extensions that will allow you to build and deploy code to our robots.
+
+## Overview
+
 This tutorial explains how our team writes Java code to control our robot.  For a more general introduction to programming FRC robots, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/).
 
 This year's tutorial contains a lot more overview material than usual because most of the students on our team are new to the FIRST Robotics Competition.  Don't worry if you don't understand everything at first!
 
 If you are a first-year student, you are welcome to just watch, or get involved as much as you want.  There are no expectations for first-year students; we recognize that you can learn a lot just by observing without the pressure of feeling like you need to code.  For sophomores and above, we will encourage you to jump in and help code.  The more effort you put in, the more authority and responsibility you will earn.  This year is a great opportunity to develop your skills as a programmer and to be a team player who can be counted on to meet reasonable (but sometimes challenging) expectations.
 
-## Background
+### Background
 
 FRC stands for "FIRST Robotics Competition."  The basis for this competition is a standardized robotic framework that includes a National Instruments [roboRIO](https://forums.ni.com/t5/FIRST-Robotics-Competition/roboRIO-Details-and-Specifications/ta-p/3494658?profile.language=en) controller.  We're writing code to load onto a roboRIO to control our robot.
 
