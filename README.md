@@ -17,6 +17,15 @@ After launching the installer for your operating system, follow the rest of the 
 
 This will install VS Code with the WPILib extensions that will allow you to build and deploy code to our robots.
 
+## Emergency Safety Shutoff
+
+Robots start in disabled mode.  Before you click "enable" to start running your code, have someone on the driver station computer looking at the robot with their fingers over the Enter key ready to shut if off immediately.
+
+The two emergency shut off keys on the driver station are
+
+- Enter Key - disables the robot temporarily (allows restart without reboot)
+- Spacebar - disables the robot until you reboot the robot or push new code
+
 ## Overview
 
 This tutorial explains how [our team, the Outliers,](https://www.theoutliers.org/) writes Java code to control our robot.  For a more general introduction to programming FRC robots, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/).
