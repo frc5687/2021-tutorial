@@ -241,7 +241,9 @@ There is lots of great FRC code on GitHub!  Here are some teams that have done o
 * [https://github.com/Team254/FRC-2019-Public](https://github.com/Team254/FRC-2019-Public)
 * [https://github.com/mayhd3/FRC-3464-2018](https://github.com/mayhd3/FRC-3464-2018)
 
-## Glossary
+## References
+
+### Glossary
 
 Term | Definition
 -----|-----------
@@ -273,3 +275,12 @@ unit testing | One of the best ways to prevent having to debug too many issues a
 VS Code | Visual Studio Code, an integrated development environment for writing software.  This combines a programming editor with syntax highlighting, plus tools for revision control, as well as building, running and debugging code.
 version control | Also called "revision control," this is a system for keeping track of changes to a project. GitHub is the host we use for version control, and VS Code is one of the client programs we use to check out and check in code stored on GitHub.  All changes to our code are tracked so that you can see exactly what changed and who changed it between versions.
 WPILib | This is the library of code that we use to control our robot.  Rather than reinventing the wheel, we start with code that other people have developed, and add our own enhancements to control the hardware we build.  WPI stands for the [Worcester Polytechnic Institute](https://www.wpi.edu/) in [Worcester, Massachusetts](https://en.wikipedia.org/wiki/Worcester,_Massachusetts).
+
+### Timescales
+
+Event | Duration, Frequency or Delay
+------|-----------------------------
+RoboRio CPU Cycle | 0.0000015 ms
+limelight frame processing time | 11.11 ms
+standard loop time for our code | 20 ms
+total limelight latency (Photons -> Robot) | 21-25 ms
