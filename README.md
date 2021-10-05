@@ -206,7 +206,7 @@ Ideally the main branch will always compile, can be loaded onto the robot, gives
 - Check out the main branch.
 - Deploy main branch code to the robot so other teams have a working robot to play with.
 
-It's our responsibility as the controls team to always leave the robot in a known good working state.  Never end a programming session with issue branch code on the robot!
+It's our responsibility as the controls team to always leave the robot in a known good working state.  Never end a programming session with issue branch code on the robot! (Do as Gabe says not as he does)
 
 We also always check in code to GitHub before we deploy so we have a commit ID and can determine exactly what code is running on the robot to help with issue resolution and debugging.  If we see the robot doing something weird, we can check the commit ID to find out which version of our code is running.
 
