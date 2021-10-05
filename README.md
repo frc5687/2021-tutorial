@@ -84,7 +84,6 @@ This year we are switching our recommended [integrated development environment (
 ### Accounts you will need
 * Slack - If you aren't on slack, please talk with or email a student on the team so they can make sure you get added to the right channels
 * [GitHub](https://github.com/join?source=header) - Once you have created your account, let Ben Bernard know so we can add you to the team
-* [GoodDay](https://www.goodday.work/) - The whole robotics team is using GoodDay to manage requirements and the team gantt chart.  Our lead programmer is responsible for keeping us on track per the GoodDay schedule.
 * You may also be required to create Atlassian, Oracle, and JetBrains accounts in order to download their tools.
 
 ### Setting up your tools
