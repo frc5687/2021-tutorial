@@ -297,6 +297,9 @@ WPILib | This is the library of code that we use to control our robot.  Rather t
 Event | Duration, Frequency or Delay
 ------|-----------------------------
 RoboRio CPU Cycle | 0.0000015 ms
+robot moves one centimeter (at top speed ~ 13.4 mph) | 1.67 ms
 limelight frame processing time | 11.11 ms
 standard loop time for our code | 20 ms
 total limelight latency (Photons -> Robot) | 21-25 ms
+robot moves 30.48 centimeters (about one foot at top speed ~ 13.4 mph) | 50.8 ms
+robot moves 6 meters (at top speed ~ 13.4 mph) | 1,000 ms
