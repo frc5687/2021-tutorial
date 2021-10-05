@@ -246,7 +246,6 @@ The reason we deploy code from a development machine and not from our drive stat
 
 There is lots of great FRC code on GitHub!  Here are some teams that have done or are doing interesting things.
 
-* [https://github.com/Team5818/DiffSwerve](https://github.com/Team5818/DiffSwerve)
 * [https://github.com/Team254/FRC-2019-Public](https://github.com/Team254/FRC-2019-Public)
 * [https://github.com/mayhd3/FRC-3464-2018](https://github.com/mayhd3/FRC-3464-2018)
 
