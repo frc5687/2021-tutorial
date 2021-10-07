@@ -84,7 +84,6 @@ This year we are switching our recommended [integrated development environment (
 ### Accounts you will need
 * Slack - If you aren't on slack, please talk with or email a student on the team so they can make sure you get added to the right channels
 * [GitHub](https://github.com/join?source=header) - Once you have created your account, let Ben Bernard know so we can add you to the team
-* [GoodDay](https://www.goodday.work/) - The whole robotics team is using GoodDay to manage requirements and the team gantt chart.  Our lead programmer is responsible for keeping us on track per the GoodDay schedule.
 * You may also be required to create Atlassian, Oracle, and JetBrains accounts in order to download their tools.
 
 ### Setting up your tools
@@ -207,7 +206,7 @@ Ideally the main branch will always compile, can be loaded onto the robot, gives
 - Check out the main branch.
 - Deploy main branch code to the robot so other teams have a working robot to play with.
 
-It's our responsibility as the controls team to always leave the robot in a known good working state.  Never end a programming session with issue branch code on the robot!
+It's our responsibility as the controls team to always leave the robot in a known good working state.  Never end a programming session with issue branch code on the robot! (Do as Gabe says not as he does)
 
 We also always check in code to GitHub before we deploy so we have a commit ID and can determine exactly what code is running on the robot to help with issue resolution and debugging.  If we see the robot doing something weird, we can check the commit ID to find out which version of our code is running.
 
@@ -247,7 +246,6 @@ The reason we deploy code from a development machine and not from our drive stat
 
 There is lots of great FRC code on GitHub!  Here are some teams that have done or are doing interesting things.
 
-* [https://github.com/Team5818/DiffSwerve](https://github.com/Team5818/DiffSwerve)
 * [https://github.com/Team254/FRC-2019-Public](https://github.com/Team254/FRC-2019-Public)
 * [https://github.com/mayhd3/FRC-3464-2018](https://github.com/mayhd3/FRC-3464-2018)
 
