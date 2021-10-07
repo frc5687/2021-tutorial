@@ -28,7 +28,7 @@ The two emergency shut off keys on the driver station are
 
 ## Overview
 
-This tutorial explains how [our team, the Outliers,](https://www.theoutliers.org/) writes Java code to control our robot.  For a more general introduction to programming FRC robots, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/).
+This tutorial explains how [our team, the Outliers,](https://www.theoutliers.org/) writes Java code to control our robot.  For a more general introduction to programming FRC robots, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/) and [FRC Programming Done Right](https://frc-pdr.readthedocs.io/en/latest/).
 
 This year's tutorial contains a lot more overview material than usual because most of the students on our team are new to the FIRST Robotics Competition.  Don't worry if you don't understand everything at first!
 
