@@ -17,14 +17,76 @@ After launching the installer for your operating system, follow the rest of the 
 
 This will install VS Code with the WPILib extensions that will allow you to build and deploy code to our robots.
 
+## Cloning Repos
+
+All of our code is stored on a website called GitHub in collections called "repos" (short for repositories).  A repo has a complete record of all the changes ever made, so you can see who made each change and check out code at any stage of development.
+
+When you visit a repo on GitHub, you can find out the HTTPS web URL to use to clone the repo (make an exact copy of it) on your own computer.  For example, the web URL to clone this tutorial repo is https://github.com/frc5687/2021-tutorial.git.
+
+Use VS Code to work with repos.  Here's how to get your copy of the tutorial repo on your own computer:
+
+ - Open up VS Code
+ - Type Ctrl + Shift + P to show the command palette
+ - Type git to show all the git commands
+ - Click on "Git: Clone"
+ - Paste in https://github.com/frc5687/2021-tutorial.git for the repository URL
+ - Click on "Clone from GitHub"
+ - Choose a directory on your computer for the repo files
+
+If you don't see git commands when you type git in the command palette in VS Code, you may need to get git from [https://git-scm.com/](https://git-scm.com/).  VS Code has a built-in terminal that calls other programs on your computer, like git.  If VS Code can't find a version of git on your computer, it will complain and none of the git commands will work from VS Code.
+
+Assuming you do have git installed, when you clone a repo VS Code will ask where you would like to store your local copy of the files in the repo.  If you are working on Windows, a good directory to use for all of your Outliers code is C:\Users\you\Documents\Outliers. When you clone a repo, choose that Outliers directory.  The repo files will be stored in a sub-directory.
+
+Once you have cloned a repo, you can open the folder in VS Code to see all the files in the repo.  You can edit them on your own computer without affecting the repo on GitHub.  If you'd like to save your changes in the repo, you can save your changes to your own computer first, and then commit them to the repo in a separate step.  When you commit changes, you can write a commit message to explain what your changes do.
+
+## Using Git in VS Code
+
+We are a team, so it's important that we know how to use git and GitHub to work together on code.  It's very easy to end up with a complete mess if we don't all understand how to manage changes to the code we are all working on at the same time.
+
+Get two extensions to improve how git works in VS Code.
+
+ 1. Git Graph -- This will show you a graph of all the changes that everyone has made in the repo.
+ 2. GitLens -- This will add annotations (called "blame" or "kudos") as you're working on VS Code showing who wrote each line of code in the current version you're working on.  It can be very helpful to know who is responsible for the code you're looking at.
+
+ ## Branches
+
+You must understand what branches are and how they work.  If you are new to using GitHub, start by reading [Working with Branches in Git and GitHub](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/).  In past years, the main branch was called "master."  Now is it called "main."  But the point of this article ("don't mess with the master") is still valid: don't mess with the main branch.
+
+Instead, you should be working on an issue branch.  Each time we want to make a change to our code, we create an issue in GitHub and create an issue branch.  When you are assigned an issue, you check out the issue branch and do your work on that branch.  When you're done, you submit a pull request so your code can be reviewed.  If it passes unit tests and the code review, then your changes will be pulled into the main branch.
+
+The main branch should always work on the robot.  Broken code should never make it onto the main branch.
+
+## Commits
+
+Before deploying code to the robot, commit it.  Every commit has a unique id.  We can see the commit id when we're running code on the robot.  By committing code first and then deploying it to the robot, we can tell exactly what is running on the robot.
+
+If you deploy code that you have not committed, we don't know what is actually running on the robot.  You could have made odd changes that you never save and never get committed to the repo.  That way lies madness: deploying uncommitted code makes it impossible to know what code was actually running on the code when we observed its behavior.
+
+When you check out a branch, by default you checkout the most recent commit on that branch.  An easy way to see the history of commits is to use Git Graph in VS Code.
+
+Here's how to use Git Graph to checkout a specific commit.  This is helpful if you want to roll back changes and deploy an earlier version of the code to the robot when you're chasing down bugs:
+
+ - Open your repo in VS Code
+ - Click on Git Graph (if you don't see Git Graph on the status bar, install the Git Graph extension for VS Code)
+ - Left click on a commit to show details
+ - Right click on the selected commit to show a menu
+ - Select Checkout
+
+That will checkout that commit (i.e. that specific version of the code), which you can then deploy to the robot.  You should learn about several other things you can do with commits, such as
+
+ - Add Tag
+ - Create Branch
+ - Cherry Pick
+ - Revert
+ - Merge into current branch
+
+Practice with commits until using them is second nature.  During build season and competitions, we will often break code trying to fix bugs, or discover that a bug was introduced in a previous commit.  It's important to know how to get back to a known good version of the code and branch from there, or pull in a fix from a specific commit on a branch that otherwise isn't ready for prime time.
+
 ## Emergency Safety Shutoff
 
 Robots start in disabled mode.  Before you click "enable" to start running your code, have someone on the driver station computer looking at the robot with their fingers over the Enter key ready to shut if off immediately.
 
-The two emergency shut off keys on the driver station are
-
-- Enter Key - disables the robot temporarily (allows restart without reboot)
-- Spacebar - disables the robot until you reboot the robot or push new code
+The two emergency shut off keys on the driver station are the Enter key and the Spacebar.
 
 ## Overview
 
@@ -266,7 +328,7 @@ controller area network (CAN) bus | The [CAN bus](https://docs.wpilib.org/en/sta
 central processing unit (CPU) | The *central processing unit* is an electronic device inside every computer or computerized piece of equipment that receives signals, performs logic operations, and transmits signals based on the results.  The main CPU of our robot is inside the roboRIO.  Some devices on our robot might have their own CPUs to allow those devices to be "smarter" so they can perform their own sequences of logic operations, allowing us to offload some calculations from the roboRIO to those devices.
 cheesy drive | *Cheesy drive* is a drive system like arcade drive, where one stick controls the speed of the robot and the other stick steers it.  But with cheesy drive, the "turning" stick controls the curvature of the robot's path rather than its rate of heading change.  This helps make the robot more controllable at high speeds.  The WPI cheesy drive method also handles the robot's quick turn functionality - "quick turn" overrides constant-curvature turning for turn-in-place maneuvers.
 daisy chain | [*Daisy chain*](https://en.wikipedia.org/wiki/Daisy_chain_(electrical_engineering)) means to connect several devices together in a linear series.
-dashboard | A *dashboard* shows us what's going on with our device.  There are severl different dashboards we can use to get a visual overview of what our code is doing: [LabVIEW Dashboard (Windows Only)](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#labview-dashboard-windows-only), [SmartDashboard](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#smartdashboard), [Shuffleboard](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#shuffleboard) and [Glass](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#glass).
+dashboard | A *dashboard* shows us what's going on with our device.  There are several different dashboards we can use to get a visual overview of what our code is doing: [LabVIEW Dashboard (Windows Only)](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#labview-dashboard-windows-only), [SmartDashboard](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#smartdashboard), [Shuffleboard](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#shuffleboard) and [Glass](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-software.html#glass).
 direct current (DC) |  [Direct current (DC)](https://en.wikipedia.org/wiki/Direct_current) is one-directional flow of electric charge. A battery is a prime example of DC power.  Virtually all power flow on an FRC robot is direct current, powered by one 12 volt lead-acid sealed battery.
 differential swerve drive | A *differential swerve drive* is similar to a "classic" swerve drive, except it doesn't have separate dedicated motors for steering and throttle. Instead, the two drive motors are linked through a mechanical differential, which allows for the module to either rotate or translate depending on the ratio of the individual motors' velocities. The advantage is that both motors contribute to wheel power, providing more traction than a classic swerve drive in which only one motor is providing transational power for each wheel, while the other is largely idle except when rotating the wheel to change direction.
 drive team | Our *drive team* remotely controls our robot during competition (and practices).  During play we will have two humans with joysticks providing operator input via radio signals to the robot. In addition, we usually have a coach watching the field of play to help the people on the joysticks know what to do, and a human player whose role depends on the game rules.  In some games, the human players may drop game pieces onto the field.
