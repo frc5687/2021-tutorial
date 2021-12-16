@@ -1,0 +1,1 @@
+The ideas folder is for ideas about improving and using this tutorial.
