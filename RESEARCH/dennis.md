@@ -13,13 +13,14 @@
 ### Cameras:
  - Zed camera by Stereolab’s
  - Intel Cameras (discontinued?) Depth, Lidar, Slam, Etc.
- - Algorithms for localization:
 
-### [Kalman Filter Family](https://en.wikipedia.org/wiki/Kalman_filter):
+### Algorithms for localization:
+
+#### [Kalman Filter Family](https://en.wikipedia.org/wiki/Kalman_filter):
  - Kalman Filter (For Linear Systems)
  - Extended Kalman Filter (Non-linear Systems by linearizations with jacobians.)
  - Unscented Kalman Filter (Non-linear, Sampling technique better than EFK, more computationally expensive)
 
-### [Particle Filter / Monte Carlo Localization](https://en.wikipedia.org/wiki/Monte_Carlo_localization#Basic_description):
+#### [Particle Filter / Monte Carlo Localization](https://en.wikipedia.org/wiki/Monte_Carlo_localization#Basic_description):
  - Commonly used for indoor localization
  - Computationally expensive as well.
