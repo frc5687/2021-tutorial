@@ -15,15 +15,20 @@ Tutorial for 2021-2022 school year to help students start programming (controls)
 
 After launching the installer for your operating system, follow the rest of the instructions in the [Installation Guide](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html).
 
-This will install VS Code with the WPILib extensions that will allow you to build and deploy code to our robots.
+This will install [VS Code](https://code.visualstudio.com/) with the [WPILib](https://docs.wpilib.org/en/stable/docs/software/what-is-wpilib.html) extensions that will allow you to build and deploy code to our robots.
 
-## Cloning Repos
+## Repos
 
-All of our code is stored on a website called GitHub in collections called "repos" (short for repositories).  A repo has a complete record of all the changes ever made, so you can see who made each change and check out code at any stage of development.
+All of our code is stored on a website called GitHub in collections called "repos" (short for repositories).  A repo has a complete record of all the changes ever made, so you can see who made each change and check out code at any stage of development.  At the moment, we're actively working in three repos:
 
-When you visit a repo on GitHub, you can find out the HTTPS web URL to use to clone the repo (make an exact copy of it) on your own computer.  For example, the web URL to clone this tutorial repo is https://github.com/frc5687/2021-tutorial.git.
+ - [2021-tutorial](https://github.com/frc5687/2021-tutorial) => What you're reading now.  This explains how we write code for our robot.
+ - [SwerveBase](https://github.com/frc5687/SwerveBase) => The base code we'll start with each season for building robots that use differential swerve drives.  (See below for what a "differential swerve drive' is.)
+ - [Proto-Bot-2021](https://github.com/frc5687/Proto-Bot-2021) => Code for the "chassis bot" that the team built for us so we can practice coding autonomous routines for differential swerve drives and play around with vision systems for localization.
+### Cloning Repos
 
-Use VS Code to work with repos.  Here's how to get your copy of the tutorial repo on your own computer:
+When you visit a repo on GitHub, you can find out the HTTPS web URL to use to [clone the repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) (make an exact copy of it) on your own computer.  For example, the web URL to clone this tutorial repo is https://github.com/frc5687/2021-tutorial.git.
+
+Use [VS Code](https://code.visualstudio.com/) (a free programming environment from Microsoft) to work with repos.  Here's how to get your copy of the tutorial repo on your own computer:
 
  - Open up VS Code
  - Type Ctrl + Shift + P to show the command palette
@@ -90,7 +95,7 @@ The two emergency shut off keys on the driver station are the Enter key and the 
 
 ## Overview
 
-This tutorial explains how [our team, the Outliers,](https://www.theoutliers.org/) writes Java code to control our robot.  For a more general introduction to programming FRC robots, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/) and [FRC Programming Done Right](https://frc-pdr.readthedocs.io/en/latest/).
+This tutorial explains how [our team, the Outliers,](https://www.theoutliers.org/) writes Java code to control our robot.  For a more general introduction to programming FRC robots, see the [FIRST Robotics Competition Control System](https://docs.wpilib.org/en/stable/) and [FRC Programming Done Right](https://frc-pdr.readthedocs.io/en/latest/).  Google searches about specific issues will often lead you to discussions on [chiefdelphi](https://www.chiefdelphi.com/), a discussion board set up in the 1990s by FRC team #47 (from Delphi and Pontiac Central High School whose mascot was the Chief).
 
 This year's tutorial contains a lot more overview material than usual because most of the students on our team are new to the FIRST Robotics Competition.  Don't worry if you don't understand everything at first!
 

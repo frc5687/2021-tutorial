@@ -3,9 +3,9 @@
 ## Teams Of Interest:
 
  - Team 900 [Zebracorns](https://team900.org/labs/):  Team has pretty complex software that is probably out of the scope of what we want/can do.
- - Team 254: One of the best teams in the world. Don’t always release software.
- - Team 2910: Well known swerve team
- - Team 1114: Another one of the best in the world teams.
+ - Team 254 [The Cheesy Poofs](https://www.team254.com/): One of the best teams in the world. Don’t always release software.
+ - Team 2910 [Jack in the Bot](https://frcteam2910.org/): Well known swerve team
+ - Team 1114 [Simbotics](https://www.simbotics.org/): Another one of the best in the world teams.
  
 
 ## Localization & Vision:
