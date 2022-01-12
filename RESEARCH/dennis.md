@@ -24,3 +24,9 @@
 #### [Particle Filter / Monte Carlo Localization](https://en.wikipedia.org/wiki/Monte_Carlo_localization#Basic_description):
  - Commonly used for indoor localization
  - Computationally expensive as well.
+
+## Reasources:
+
+- [Probabilistic Robotics Textbook](https://docs.ufpr.br/~danielsantos/ProbabilisticRobotics.pdf): has a ton of information about the derivations of multiple types of filters as well as sudo code.
+- [Cyrill Stachniss Youtube](https://www.youtube.com/c/CyrillStachniss/playlists):  Professor at University of Bonn has a ton of information relating to robotics, the observation model we can use will stem from his video about observation models.
+- [Python Robotics Repo](https://pythonrobotics.readthedocs.io/en/latest/): Has a ton of code written in python. Good for trying to understand some algorithms.
