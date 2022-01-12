@@ -19,11 +19,9 @@ This will install [VS Code](https://code.visualstudio.com/) with the [WPILib](ht
 
 ## Repos
 
-All of our code is stored on a website called GitHub in collections called "repos" (short for repositories).  A repo has a complete record of all the changes ever made, so you can see who made each change and check out code at any stage of development.  At the moment, we're actively working in three repos:
+All of our code is stored on a website called GitHub in collections called "repos" (short for repositories).  A repo has a complete record of all the changes ever made, so you can see who made each change and check out code at any stage of development.  At the moment, we're actively working in one repo:
 
- - [2021-tutorial](https://github.com/frc5687/2021-tutorial) => What you're reading now.  This explains how we write code for our robot.
- - [SwerveBase](https://github.com/frc5687/SwerveBase) => The base code we'll start with each season for building robots that use differential swerve drives.  (See below for what a "differential swerve drive' is.)
- - [Proto-Bot-2021](https://github.com/frc5687/Proto-Bot-2021) => Code for the "chassis bot" that the team built for us so we can practice coding autonomous routines for differential swerve drives and play around with vision systems for localization.
+ - [2022-robot](https://github.com/frc5687/2022-robot) => Code for this season's competition robot.
 ### Cloning Repos
 
 When you visit a repo on GitHub, you can find out the HTTPS web URL to use to [clone the repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) (make an exact copy of it) on your own computer.  For example, the web URL to clone this tutorial repo is https://github.com/frc5687/2021-tutorial.git.
