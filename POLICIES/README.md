@@ -5,4 +5,4 @@ Outliers Controls Team Policies for 2022 Season
 - Create an issue branch named subsystem/issue#-description.
 - Main branch will be protected.
 - Pull requests must pass unit tests.
-- A mentor (Dennis or Jon Tower) reviews code before it gets merged to main.
+- A mentor (Dennis or John Tower) reviews code before it gets merged to main.

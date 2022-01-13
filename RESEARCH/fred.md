@@ -3,7 +3,7 @@ Fred's Robotics Research
 # Interesting Code from Other FRC Teams
 
 # My Thoughts
-
+Once object detection works, robots can do much more autonomously.
 
 # Interesting Articles
 
