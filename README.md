@@ -63,7 +63,7 @@ The main branch should always work on the robot.  Broken code should never make 
 
 Before deploying code to the robot, commit it.  Every commit has a unique id.  We can see the commit id when we're running code on the robot.  By committing code first and then deploying it to the robot, we can tell exactly what is running on the robot.
 
-If you deploy code that you have not committed, we don't know what is actually running on the robot.  You could have made odd changes that you never save and never get committed to the repo.  That way lies madness: deploying uncommitted code makes it impossible to know what code was actually running on the code when we observed its behavior.
+If you deploy code that you have not committed, we don't know what is actually running on the robot.  You could have made odd changes that you never save and never get committed to the repo.  That way lies madness: deploying uncommitted code makes it impossible to know what code was actually running on the robot when we observed its behavior.
 
 When you check out a branch, by default you checkout the most recent commit on that branch.  An easy way to see the history of commits is to use Git Graph in VS Code.
 
