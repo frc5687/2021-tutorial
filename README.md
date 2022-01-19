@@ -4,12 +4,12 @@ Tutorial for 2021-2022 school year to help students start programming (controls)
 ## Quick Start
 
 - Windows 10
-  - Download [WPILib_Windows64-2022.1.1.iso](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.1.1/WPILib_Windows64-2022.1.1.iso)
+  - Download [WPILib_Windows64-2022.2.1.iso](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.2.1/WPILib_Windows64-2022.2.1.iso)
   - Right click on the downloaded disk image.
   - Select Mount to open it.
   - Launch WPILibInstaller.exe
 - MacOS
-  - Download [WPILib_macOS-2022.1.1.dmg](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.1.1/WPILib_macOS-2022.1.1.dmg)
+  - Download [WPILib_macOS-2022.2.1.dmg](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.2.1/WPILib_macOS-2022.2.1.dmg)
   - Double click on the downloaded DMG.
   - Select WPILibInstaller to launch the installer.
 
@@ -144,8 +144,8 @@ This year we are switching our recommended [integrated development environment (
 
 ### Software to download
 * [Slack](https://slack.com/downloads) - for team communication.  You might want both a desktop and a mobile version of slack since we use this for team communication.
-* [WPILib](https://github.com/wpilibsuite/allwpilib/releases/tag/v2021.3.1) - for tools and libraries we use in our code.  Make sure to get the latest release.
-* [SourceTree](https://www.sourcetreeapp.com/) - for working with GitHub repositories.  (optional)
+* [WPILib](https://github.com/wpilibsuite/allwpilib/releases) - for tools and libraries we use in our code.  Make sure to get the latest release.
+* Note: This year we are using the Git Graph extension inside vscode rather than [SourceTree](https://www.sourcetreeapp.com/) to work with branches.
 
 ### Accounts you will need
 * Slack - If you aren't on slack, please talk with or email a student on the team so they can make sure you get added to the right channels
