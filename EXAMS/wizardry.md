@@ -17,7 +17,7 @@ A level one wizard can safely control the robot using robot code provided by hig
 - Secure the robot so drive wheels are visible and off the ground.
 - Install a battery on the robot.
 - Turn robot on.
-- Explain the lights on the robot.
+- Explain the lights on the robot (RSL, radio).
 - Connect drive station to robot WiFi.
 - Check that drive station is communicating with robot.
 - Note which version of code is running on the robot.
