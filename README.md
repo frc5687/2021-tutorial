@@ -4,12 +4,12 @@ Tutorial for 2021-2022 school year to help students start programming (controls)
 ## Quick Start
 
 - Windows 10
-  - Download [WPILib_Windows64-2022.1.1.iso](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.1.1/WPILib_Windows64-2022.1.1.iso)
+  - Download [WPILib_Windows64-2022.2.1.iso](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.2.1/WPILib_Windows64-2022.2.1.iso)
   - Right click on the downloaded disk image.
   - Select Mount to open it.
   - Launch WPILibInstaller.exe
 - MacOS
-  - Download [WPILib_macOS-2022.1.1.dmg](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.1.1/WPILib_macOS-2022.1.1.dmg)
+  - Download [WPILib_macOS-2022.2.1.dmg](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.2.1/WPILib_macOS-2022.2.1.dmg)
   - Double click on the downloaded DMG.
   - Select WPILibInstaller to launch the installer.
 
@@ -22,6 +22,7 @@ This will install [VS Code](https://code.visualstudio.com/) with the [WPILib](ht
 All of our code is stored on a website called GitHub in collections called "repos" (short for repositories).  A repo has a complete record of all the changes ever made, so you can see who made each change and check out code at any stage of development.  At the moment, we're actively working in one repo:
 
  - [2022-robot](https://github.com/frc5687/2022-robot) => Code for this season's competition robot.
+
 ### Cloning Repos
 
 When you visit a repo on GitHub, you can find out the HTTPS web URL to use to [clone the repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) (make an exact copy of it) on your own computer.  For example, the web URL to clone this tutorial repo is https://github.com/frc5687/2021-tutorial.git.
@@ -53,9 +54,9 @@ Get two extensions to improve how git works in VS Code.
 
  ## Branches
 
-You must understand what branches are and how they work.  If you are new to using GitHub, start by reading [Working with Branches in Git and GitHub](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/).  In past years, the main branch was called "master."  Now is it called "main."  But the point of this article ("don't mess with the master") is still valid: don't mess with the main branch.
+Learn what branches are and how they work.  If you are new to using GitHub, start by reading [Working with Branches in Git and GitHub](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/).  In past years, the main branch was called "master."  Now is it called "main."  But the point of this article ("don't mess with the master") is still valid: don't mess with the main branch.
 
-Instead, you should be working on an issue branch.  Each time we want to make a change to our code, we create an issue in GitHub and create an issue branch.  When you are assigned an issue, you check out the issue branch and do your work on that branch.  When you're done, you submit a pull request so your code can be reviewed.  If it passes unit tests and the code review, then your changes will be pulled into the main branch.
+Do your work on an issue branch.  Each time we want to make a change to our code, we create an issue in GitHub and create an issue branch.  When you are assigned an issue, check out the issue branch and do your work on that branch.  When you're done, submit a pull request so your code can be reviewed.  If it passes unit tests and the code review, then your changes will be pulled into the main branch.
 
 The main branch should always work on the robot.  Broken code should never make it onto the main branch.
 
@@ -143,8 +144,8 @@ This year we are switching our recommended [integrated development environment (
 
 ### Software to download
 * [Slack](https://slack.com/downloads) - for team communication.  You might want both a desktop and a mobile version of slack since we use this for team communication.
-* [WPILib](https://github.com/wpilibsuite/allwpilib/releases/tag/v2021.3.1) - for tools and libraries we use in our code.  Make sure to get the latest release.
-* [SourceTree](https://www.sourcetreeapp.com/) - for working with GitHub repositories.  (optional)
+* [WPILib](https://github.com/wpilibsuite/allwpilib/releases) - for tools and libraries we use in our code.  Make sure to get the latest release.
+* Note: This year we are using the Git Graph extension inside vscode rather than [SourceTree](https://www.sourcetreeapp.com/) to work with branches.
 
 ### Accounts you will need
 * Slack - If you aren't on slack, please talk with or email a student on the team so they can make sure you get added to the right channels
