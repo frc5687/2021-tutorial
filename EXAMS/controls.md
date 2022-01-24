@@ -1,11 +1,17 @@
 Arcane incantations are required to summon and influence the forces that animate our robots. The Outliers Controls Exams ensure that our team has students who possess the required knowlege and skill to safely and effectively control our robots.
 
-Each controls exam for the 2021-2022 season is conducted hands on with the chassis bot or the competition bot. A team mentor must sign off on the exam before a student earns a level.
+Each controls exam for the 2021-2022 season is conducted hands on with the chassis bot or the competition bot. A team mentor must sign off on the exam before a student earns a level.  Students must be able to complete every exam task independently to pass.
+
+From time to time we add or remove exam tasks.  We track these with a revision letter (A through Z).  For example, for revision B of the level one exam we have added knowing how to find the version of the code running on the robot.
 
 # Level One Controls Exam
 
 A level one license holder can safely control the robot using robot code provided by higher level license holders.
 
+## Revision C
+
+- Bring your own laptop to the drive session.
+- Show how to log a drive session.
 - Turn on and boot up the drive station computer.
 - Login to the computer.
 - Check that the drive station software is running.
@@ -19,9 +25,10 @@ A level one license holder can safely control the robot using robot code provide
 - Turn robot on.
 - Explain the lights on the robot (RSL, radio).
 - Connect drive station to robot WiFi.
-- Check that drive station is communicating with robot.
+- Check that "all systems are go."
 - Note which version of code is running on the robot.
 - Show how to reboot the robot and restart the robot code.
+- Explain how to enable a robot safely.
 - Call out "Enabling robot."
 - Put fingers over Enter key on drive station to be able to disable robot quickly.
 - Enable robot.
@@ -33,6 +40,24 @@ A level one license holder can safely control the robot using robot code provide
 - Drive robot.
 - Turn robot off.
 - Unplug battery and show how to pick up the battery and put it away.
+- Log drive session.
+
+## Revision B
+
+These tasks have been added to the exam since Revision B:
+
+- Bring your own laptop to the drive session.
+- Show how to log a drive session.
+- Log drive session.
+
+## Revision A
+
+These tasks have been added to the exam since Revision A:
+
+- Bring your own laptop to the drive session.
+- Show how to log a drive session.
+- Note which version of code is running on the robot.
+- Log drive session.
 
 # Level Two Controls Exam
 
