@@ -1,10 +1,10 @@
-Arcane incantations are required to summon and influence the forces that animate our robots. The Outliers Wizardry Exams ensure that our team has student wizards who possess the required knowlege and skill to safely and effectively control our robots.
+Arcane incantations are required to summon and influence the forces that animate our robots. The Outliers Controls Exams ensure that our team has students who possess the required knowlege and skill to safely and effectively control our robots.
 
-Each wizardry exam for the 2021-2022 season is conducted hands on with the chassis bot or the competition bot. A wizard mentor must sign off on the exam before a wizard earns a level.
+Each controls exam for the 2021-2022 season is conducted hands on with the chassis bot or the competition bot. A team mentor must sign off on the exam before a student earns a level.
 
-# Level One Wizard Exam
+# Level One Controls Exam
 
-A level one wizard can safely control the robot using robot code provided by higher level wizards.
+A level one license holder can safely control the robot using robot code provided by higher level license holders.
 
 - Turn on and boot up the drive station computer.
 - Login to the computer.
@@ -34,9 +34,9 @@ A level one wizard can safely control the robot using robot code provided by hig
 - Turn robot off.
 - Unplug battery and show how to pick up the battery and put it away.
 
-# Level Two Wizard Exam
+# Level Two Controls Exam
 
-A level two wizard can safely deploy code to the robot to test features under development by higher level wizards.
+A level two license holder can safely deploy code to the robot to test features under development by higher level license holders.
 
 - Go to a second desktop.
 - Open up vscode.
@@ -52,9 +52,9 @@ A level two wizard can safely deploy code to the robot to test features under de
 - Deploy main branch code to the robot.
 - Check that main branch code is on the robot.
 
-# Level Three Wizard Exam
+# Level Three Controls Exam
 
-A level three wizard can adjust code parameters to change the behavior of the robot.
+A level three license holder can adjust code parameters to change the behavior of the robot.
 
 - Re-map joystick buttons.
 - Adjust the throttle control curve.
@@ -63,9 +63,9 @@ A level three wizard can adjust code parameters to change the behavior of the ro
 - Adjust the limelight values.
 - Adjust the direction the wheels on the drive train point and spin.
 
-# Level Four Wizard Exam
+# Level Four Controls Exam
 
-A level four wizard can write new code to add features or control new hardware added to the robot.
+A level four licenese holder can write new code to add features or control new hardware added to the robot.
 
 - Create a subsystem with one sensor and one actuator.
 - Create a default command to run the subsystem based on operator input.

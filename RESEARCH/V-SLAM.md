@@ -4,9 +4,9 @@
 V-SLAM facilitates the usage of a stereoscopic camera to determination position in space whilst simultaneously mapping said space.
  
 # How V-SLAM works (this section is confusing, expand your thoughts)
-V-SLAM generates to disparty map to calculate image depth. V-SLAM uses optical flow to track the movement of key points in an image from frame to frame and then uses trig to calculate the movement of the camera useing the movments of the points. It uses a IMU to track the small movements of the camera. The IMU is then reset to stop drift.
+V-SLAM generates a disparity map to calculate image depth. V-SLAM uses optical flow to track the movement of key points in an image from frame to frame and then uses trig to calculate the movement of the camera using the movments of the points. It uses an IMU to track the small movements of the camera. The IMU is then reset to stop drift.
  
-## WARNING IF PLANNING TO WORK ON THE V-SLAM PLEASE INSURE A YOU POSSESS SOME OF THE SKILLS REQUIREMENTS. WITHOUT THESE IT WILL MAKE WORKING ON THE V-SLAM ALMOST IMPOSSIBLE
+## WARNING: IF PLANNING TO WORK ON THE V-SLAM PLEASE INSURE A YOU POSSESS SOME OF THE SKILLS REQUIREMENTS. WITHOUT THESE IT WILL MAKE WORKING ON THE V-SLAM ALMOST IMPOSSIBLE
  
 ## Hardware 
  
@@ -16,7 +16,7 @@ V-SLAM generates to disparty map to calculate image depth. V-SLAM uses optical f
     -  Best stereoscopic camera on the commercial market
     -  Needs an external processor (Jetson Xavier NX)
     -  Has a lot of built in features 
-    -  Needs CUDA **what is CUDA?**
+    -  Needs CUDA **what is CUDA?** (CUDA is a parallel computing platform and programming model to facilitate using a GPU for general purpose computing)
     -  Has a complete SDK (can be a pain to configure on Unix)
     -  Works with C/C++, C#, Python C# and Python take extra configuration
  
