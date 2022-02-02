@@ -25,7 +25,11 @@ For IP addresses, the notation "TE.AM" is used in WPI documentation and competit
 
 ### mDNS to Discover Devices
 
-What is mDNS? Multicast Domain Name System (mDNS) is a system which allows for resolution of host names to IP addresses on small networks with no dedicated name (DNS) server. To resolve a host name a device sends out a multicast message to the network querying for the device. The device then responds with a multicast message containing its IP address. Devices on the network store this information in a cache so subsequent requests can be resolved from the cache without repeating the network query.
+*This mDNS information is pulled from a description of the changes made for the 2015 season.  This info should be verified as still valid for the 2022 season.*
+
+What is mDNS?
+
+Multicast Domain Name System (mDNS) is a system which allows for resolution of host names to IP addresses on small networks with no dedicated name (DNS) server. To resolve a host name a device sends out a multicast message to the network querying for the device. The device then responds with a multicast message containing its IP address. Devices on the network store this information in a cache so subsequent requests can be resolved from the cache without repeating the network query.
 
 Basically, instead of having to know the IP address of every device on your network, you can communicate with them using their mDNS name (something like "ping roborio-2168.local" instead of "ping 10.21.68.2").
 
@@ -54,11 +58,13 @@ Please note the following exceptions:
 
 #### How do I set up my Robot Network to use mDNS?
 
-USB If using the USB interface, no setup is required. The roboRIO driver will automatically configure the IP address of the host (your computer) and roboRIO and the software listed above should be able to locate and utilize your roboRIO
+USB
+
+If using the USB interface, no setup is required. The roboRIO driver will automatically configure the IP address of the host (your computer) and roboRIO and the software listed above should be able to locate and utilize your roboRIO
 
 Ethernet/Wireless
 
-The 2015 Bridge Configuration Utility has been modified to enable the DHCP server on the DAP1522 radio in the home use case (AP mode), if you are putting the DAP1522 in bridge mode and using a router you can enable DHCP addressing on the router. The bridge is set to the same team based IP address as before (10.TE.AM.1) and will hand out DHCP address from 10.TE.AM.20 to 10.TE.AM.199
+The 2015 Bridge Configuration Utility has been modified to enable the DHCP server on the DAP1522 radio in the home use case (AP mode). If you are putting the DAP1522 in bridge mode and using a router you can enable DHCP addressing on the router. The bridge is set to the same team based IP address as before (10.TE.AM.1) and will hand out DHCP address from 10.TE.AM.20 to 10.TE.AM.199.
 
 roboRIO Ethernet Configuration
 
@@ -66,7 +72,7 @@ The roboRIO Ethernet interface should be set to DHCP. When connected to the DAP1
 
 PC Configuration
 
-When connecting via Ethernet (to either the radio or directly to the roboRIO) or Wireless (to the DLink radio), your computer adapter should be set to DHCP. When connecting through the DAP1522, your PC will receive an IP address from the radio. If tethered directly to the roboRIO both devices will self-assign IPs.
+When connecting via Ethernet (to either the radio or directly to the roboRIO) or WiFi (to the radio), your computer adapter should be set to DHCP. When connecting via WiFi, your PC will receive an IP address from the radio. If tethered directly to the roboRIO both devices will self-assign IPs.
 
 mDNS works on the field such that all of your devices are located using their mDNS address so static IPs are no longer required.
 
@@ -81,4 +87,58 @@ IPs for system components:
 - Driver Station PC: DHCP, assigned by the robot radio
 - Additional programming computers: DHCP, assigned by the robot radio (DHCP range: 10.TE.AM.20 to 10.TE.AM.199)
 
-Note: You can still assign static IPs to any device on the robot. However, do so between 10.TE.AM.2 and 10.TE.AM.19 so as to not interfere with the DHCP addressing on the of the field.
+Note: You can still assign static IPs to any device on the robot. However, do so between 10.TE.AM.2 and 10.TE.AM.19 so as to not interfere with the DHCP addressing on the field.
+
+## Controller Area Network (CAN)
+
+For background, see [FIRST CAN Networking](https://www.playingwithfusion.com/docview.php?docid=1206) and [Using CAN Devices](https://docs.wpilib.org/en/stable/docs/software/can-devices/using-can-devices.html).
+
+Controller Area Networks (CAN) are commonly used in vehicles, as well as for industrial controls.
+
+Electrically, the FRC CAN network is a two-wire bus, designed to allow dozens of devices -- known as "nodes" -- to communicate over a single network backbone. The voltage difference between the "HIGH" and "LOW" lines determines zeros and ones.  The network lets only one device speak at a time.  Message priority and collision detection are built into the physical protocol.
+
+Specifications
+ - Communication mode: bidirectional
+ - Operating speed: 1 Mbps
+ - Maximum bus wiring length: 40 meters
+ - Messages per robot control loop: 80
+ - Terminating impedance: a pair of 120-ohm resistors, one installed at each end of the bus
+ - Network topologies: daisy chain or star
+
+CAN Addresses
+
+Every device of a given model group requires a unique CAN device ID for typical FRC use (settings, control and status). The device ID is usually expressed as a number between 0 and 62, allowing use for up to 63 Talon SRXs, 63 Victors, 63 PDPs, etc. at once. This range does not intercept with device IDs of other CAN device types. For example, there is no harm in having a Pneumatics Control Module (PCM) and a Talon SRX both with device ID 0. However, having two Talon SRXs with device ID 0 will be problematic.
+
+ Notes
+ - Never have more than 2 terminators in your CAN.
+ - The roboRIO and PDP both have built-in terminating resistors to meet the terminating impedance requirement.
+ - The PDP resistor may be disabled by removing a jumper.
+ - The roboRIO's resistor can't be disabled, as it is meant to act as one end of the CAN bus.
+ - If you have a node mounted at the end of a long arm, disable the PDP terminating resistor and install your own resistor at the extreme end of your CAN.
+ - Daisy chain topology:
+   - Good for electrical noise by creating a long network with close to zero-length CAN nodes.
+   - Bus termination is trivial.
+   - Relatively messy CAN wiring.
+   - Single point of failure.
+ - Star topology:
+   - Difficult to terminate properly.
+   - Could cause reliability issues.
+   - A short-drop architecture, allowed by the CAN standard, built off of a typical daisy chain network.
+   - Use a 4-drop STAR distribution board and a CANterm terminating resistor.
+ - Much more data can be sent over a CAN connection than over a PWM connection - thus, CAN motor controllers are capable of a much more expansive feature-set than are PWM motor controllers.
+ - CAN is bi-directional, so CAN motor controllers can send data back to the RIO, again facilitating a more expansive feature-set than can be offered by PWM Controllers.
+ - CAN devices generally have their own WPILib classes.
+ - The roboRIO provides a universal CAN heartbeat that any device on the bus can listen and react to. This heartbeat is sent every 20ms.
+
+ ### CAN Hardware Devices
+
+  - Pneumatics Control Module (PCM)
+  - Pneumatic Hub (PH)
+  - Power Distribution Panel (PDP)
+  - Power Distribution Hub (PDH)
+  - Motor controllers
+    - Cross-the-Road Electronics (CTRE) Talon FX, Talon SRX, and Victor SPX
+    - REV Robotics SPARK MAX
+    - Playing With Fusion (PWF) Venom
+  - Inertial Measurement Units (IMU)
+    - CTRE Pigeon IMU
