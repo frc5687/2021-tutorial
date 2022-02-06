@@ -142,3 +142,9 @@ Every device of a given model group requires a unique CAN device ID for typical 
     - Playing With Fusion (PWF) Venom
   - Inertial Measurement Units (IMU)
     - CTRE Pigeon IMU
+
+## Pulse Width Modulation (PWM)
+
+For background, see [PWM Motor Controllers in Depth](https://docs.wpilib.org/en/stable/docs/software/hardware-apis/motors/pwm-controllers.html).
+
+PWM is a general technique for sending information or varifying the output of a motor by modulating an electrical signal.  In FRC this technique is an alternative to CAN for controlling motor speed.
