@@ -1,10 +1,10 @@
 Arcane incantations are required to summon and influence the forces that animate our robots. The Outliers Controls Exams ensure that our team has students who possess the required knowlege and skill to safely and effectively control our robots.
 
-Each controls exam for the 2021-2022 season is conducted hands on with the chassis bot or the competition bot. A team mentor must sign off on the exam before a student earns a level.  Students must be able to complete every exam task independently to pass.
+Each controls exam for the 2021-2022 season is conducted hands on with the pizza bot or the competition bot. A team mentor must sign off on the exam before a student earns a level.  Students must be able to complete every exam task independently to pass.
 
 From time to time we add or remove exam tasks.  We track these with a revision letter (A through Z).  For example, for revision B of the level one exam we have added knowing how to find the version of the code running on the robot.
 
-# Level One Controls Exam
+# Level One Controls Exam: Basic Robot Control
 
 A level one license holder can safely control the robot using robot code provided by higher level license holders.
 
@@ -59,7 +59,7 @@ These tasks have been added to the exam since Revision A:
 - Note which version of code is running on the robot.
 - Log drive session.
 
-# Level Two Controls Exam
+# Level Two Controls Exam: Deploying Code
 
 A level two license holder can safely deploy code to the robot to test features under development by higher level license holders.
 
@@ -77,7 +77,7 @@ A level two license holder can safely deploy code to the robot to test features 
 - Deploy main branch code to the robot.
 - Check that main branch code is on the robot.
 
-# Level Three Controls Exam
+# Level Three Controls Exam: Tuning and Configuring
 
 A level three license holder can adjust code parameters to change the behavior of the robot.
 
@@ -88,11 +88,26 @@ A level three license holder can adjust code parameters to change the behavior o
 - Adjust the limelight values.
 - Adjust the direction the wheels on the drive train point and spin.
 
-# Level Four Controls Exam
+# Level Four Controls Exam: Modifying Code
 
-A level four licenese holder can write new code to add features or control new hardware added to the robot.
+A level four licenese holder can modify code that a higher level license holder has written.
+
+- Modify commands to run subsystems based on operator input.
+- Modify an autonomous command to run a subsystem for a set duration.
+- Modify an autonomous command to run a subsystem until the sensor is triggered.
+
+# Level Five Controls Exam: Writing Code
+
+A level five licenese holder can write new code to add features or control hardware that a higher level license holder has added to the robot.
 
 - Create a subsystem with one sensor and one actuator.
 - Create a default command to run the subsystem based on operator input.
 - Create an autonomous command to run the subsystem for a set duration.
 - Create an autonomous command to run the subsystem until the sensor is triggered.
+
+# Level Six Controls Exam: Adding New Hardware
+
+A level six license holder can upgrade or add new hardware to the robot.
+
+- Flash an image onto the roboRIO.
+- Assign IP addresses to robot hardware.
