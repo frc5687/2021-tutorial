@@ -6,7 +6,7 @@ From time to time we add or remove exam tasks.  We track these with a revision l
 
 # Level One Controls Exam: Basic Robot Control
 
-A level one license holder can safely control the robot using robot code provided by higher level license holders.
+A level one wrangler can safely control the robot using robot code provided by higher level wranglers.
 
 ## Revision C
 
@@ -61,7 +61,7 @@ These tasks have been added to the exam since Revision A:
 
 # Level Two Controls Exam: Deploying Code
 
-A level two license holder can safely deploy code to the robot to test features under development by higher level license holders.
+A level two wrangler can safely deploy code to the robot to test features under development by higher level wranglers.
 
 - Go to a second desktop.
 - Open up vscode.
@@ -79,7 +79,7 @@ A level two license holder can safely deploy code to the robot to test features 
 
 # Level Three Controls Exam: Tuning and Configuring
 
-A level three license holder can adjust code parameters to change the behavior of the robot.
+A level three wrangler can adjust code parameters to change the behavior of the robot.
 
 - Re-map joystick buttons.
 - Adjust the throttle control curve.
@@ -90,7 +90,7 @@ A level three license holder can adjust code parameters to change the behavior o
 
 # Level Four Controls Exam: Modifying Code
 
-A level four licenese holder can modify code that a higher level license holder has written.
+A level four wrangler can modify code that a higher level wrangler has written.
 
 - Modify commands to run subsystems based on operator input.
 - Modify an autonomous command to run a subsystem for a set duration.
@@ -98,7 +98,7 @@ A level four licenese holder can modify code that a higher level license holder 
 
 # Level Five Controls Exam: Writing Code
 
-A level five licenese holder can write new code to add features or control hardware that a higher level license holder has added to the robot.
+A level five wrangler can write new code to add features or control hardware that a higher level wrangler has added to the robot.
 
 - Create a subsystem with one sensor and one actuator.
 - Create a default command to run the subsystem based on operator input.
@@ -107,7 +107,7 @@ A level five licenese holder can write new code to add features or control hardw
 
 # Level Six Controls Exam: Adding New Hardware
 
-A level six license holder can upgrade or add new hardware to the robot.
+A level six wrangler can upgrade or add new hardware to the robot.
 
 - Flash an image onto the roboRIO.
 - Assign IP addresses to robot hardware.
