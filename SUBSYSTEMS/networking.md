@@ -175,3 +175,25 @@ SocketCAN is a commonly used set of drivers and networking stack that allows for
 For background, see [PWM Motor Controllers in Depth](https://docs.wpilib.org/en/stable/docs/software/hardware-apis/motors/pwm-controllers.html).
 
 PWM is a general technique for sending information or varifying the output of a motor by modulating an electrical signal.  In FRC this technique is an alternative to CAN for controlling motor speed.
+
+## NetworkTables
+
+[NetworkTables](https://docs.wpilib.org/en/stable/docs/software/networktables/networktables-intro.html) is a way to communicate key / value pairs between programs.
+
+Named values are created either on the robot, driver station, or potentially an attached coprocessor, and the values are automatically distributed to all the other participants. For example, a driver station laptop might receive camera images over the network, perform some vision processing algorithm, and come up with some values to send back to the robot.
+
+Data types for NetworkTables are either boolean, numeric, or string. Numeric values are written as double precision values. In addition you can have arrays of any of those types to ensure that multiple data items are delivered consistently. There is also the option of storing raw data which can be used for representing structured data.
+
+Some recommendations for performance from Chief Delphi:
+
+While the default periodic flush rate is fairly slow (10 Hz) and asynchronous, NetworkTables has very consistent low latency (e.g. 1us range) if you flush (NetworkTableInstance.getDefault().flush()) immediately after updating the values you’re sending. This is the approach used by Limelight and PhotonVision and it works very well.
+
+Pro tip: you’ll get much better graphs if you flush NetworkTables every periodic loop (add NetworkTableInstance::GetDefault().Flush(); at the end of RobotPeriodic).
+
+Call NetworkTableInstance.flush() from your main loop to flush the data synchronously with your updates to it. You can send data at a rate up to every 10 ms.
+
+As Peter said, you can do NetworkTableInstance.getDefault().flush() every loop to update your values faster than the default 10hz.
+
+We did a UDP scheme between a coprocessor and the roboRIO back in 2017. Data communication worked well, and was quite robust.
+
+Peter's got the right answer though for 2022 - NT has the right stuff built in to do inter-processor communication. 
