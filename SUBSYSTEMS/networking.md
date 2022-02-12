@@ -143,6 +143,33 @@ Every device of a given model group requires a unique CAN device ID for typical 
   - Inertial Measurement Units (IMU)
     - CTRE Pigeon IMU
 
+#### CANivore (CTRE)
+
+The [CANivore](https://store.ctr-electronics.com/canivore/) is a USB-to-[CAN FD](https://store.ctr-electronics.com/can-fd/) device that allows us to add additional CAN FD busses to the roboRIO and control supported CTR Electronics devices.
+
+### CAN-FD (CTRE)
+
+CAN FD is the next iteration of the CAN bus data link layer. The FD stand for Flexible Data-Rate, meaning that portions of the frame is transmitted at higher data rates (up to 10Mbps). This means less bus time for more data. Additionally, a single frame can now hold up to 64 data bytes.
+
+Current testing with the 2022 release firmware (CANivore and supported devices) has shown that a typical bus at 80% (as reported by the driver station) will be 35% when used with a CANivore (as reported by Phoenix Tuner). That’s an effective gain of 2.3X.
+
+Currently the following products support CANFD, and therefore can be used with the CANivore
+
+- Falcon 500 Powered by Talon FX
+- CANcoder
+- Pigeon 2.0 (New for 2022 Season)
+- CANdle (New for 2022 Season)
+
+Since CAN FD is an extension of CAN 2.0, the wiring requirements are similar.
+
+- CAN bus must still have 120Ω of termination at each extreme end.
+- CAN bus stub lengths must be short (typical maximum of one foot).
+- Daisy chaining still recommended as this reduces stub length to near zero.
+
+### Socket CAN
+
+SocketCAN is a commonly used set of drivers and networking stack that allows for sending/receiving CAN frames in Linux.
+
 ## Pulse Width Modulation (PWM)
 
 For background, see [PWM Motor Controllers in Depth](https://docs.wpilib.org/en/stable/docs/software/hardware-apis/motors/pwm-controllers.html).
