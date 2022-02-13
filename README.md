@@ -4,12 +4,12 @@ Tutorial for 2021-2022 school year to help students start programming (controls)
 ## Quick Start
 
 - Windows 10
-  - Download [WPILib_Windows64-2022.2.1.iso](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.2.1/WPILib_Windows64-2022.2.1.iso)
+  - Download the latest WPILib_Windows iso file from [WPILib Releases](https://github.com/wpilibsuite/allwpilib/releases)
   - Right click on the downloaded disk image.
   - Select Mount to open it.
   - Launch WPILibInstaller.exe
 - MacOS
-  - Download [WPILib_macOS-2022.2.1.dmg](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.2.1/WPILib_macOS-2022.2.1.dmg)
+  - Download the latest WPILib_macOS dmg file from [WPILib Releases](https://github.com/wpilibsuite/allwpilib/releases)
   - Double click on the downloaded DMG.
   - Select WPILibInstaller to launch the installer.
 
