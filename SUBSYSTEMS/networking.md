@@ -4,6 +4,10 @@ Our robots have several types of networks that allow devices to communicate and 
 
 See the WPILib [Networking Introduction](https://docs.wpilib.org/en/stable/docs/networking/networking-introduction/index.html) for an overview.
 
+## FRC Driver Station
+
+FRC Driver Station only runs on Windows.  You might need to turn off all three Windows firewall policies (domain, public and private).
+
 ## Radio
 
 Either the [OpenMesh OM5P-AN or OpenMesh OM5P-AC wireless radio](https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-hardware.html#openmesh-om5p-an-or-om5p-ac-radio) is used as the robot radio to provide wireless communication functionality to the robot. The device can be configured as an Access Point for use during development or as a bridge for use during competitions.

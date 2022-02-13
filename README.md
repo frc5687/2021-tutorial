@@ -19,9 +19,10 @@ This will install [VS Code](https://code.visualstudio.com/) with the [WPILib](ht
 
 ## Repos
 
-All of our code is stored on a website called GitHub in collections called "repos" (short for repositories).  A repo has a complete record of all the changes ever made, so you can see who made each change and check out code at any stage of development.  At the moment, we're actively working in one repo:
+All of our code is stored on a website called GitHub in collections called "repos" (short for repositories).  A repo has a complete record of all the changes ever made, so you can see who made each change and check out code at any stage of development.  At the moment, we're actively working in two repos:
 
  - [2022-robot](https://github.com/frc5687/2022-robot) => Code for this season's competition robot.
+ - [2022-pizza](https://github.com/frc5687/2022-pizza) => Code for this season's chassis robot (for testing code and practicing driving).
 
 ### Cloning Repos
 
