@@ -4,12 +4,12 @@ Tutorial for 2021-2022 school year to help students start programming (controls)
 ## Quick Start
 
 - Windows 10
-  - Download [WPILib_Windows64-2022.2.1.iso](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.2.1/WPILib_Windows64-2022.2.1.iso)
+  - Download the latest WPILib_Windows iso file from [WPILib Releases](https://github.com/wpilibsuite/allwpilib/releases)
   - Right click on the downloaded disk image.
   - Select Mount to open it.
   - Launch WPILibInstaller.exe
 - MacOS
-  - Download [WPILib_macOS-2022.2.1.dmg](https://github.com/wpilibsuite/allwpilib/releases/download/v2022.2.1/WPILib_macOS-2022.2.1.dmg)
+  - Download the latest WPILib_macOS dmg file from [WPILib Releases](https://github.com/wpilibsuite/allwpilib/releases)
   - Double click on the downloaded DMG.
   - Select WPILibInstaller to launch the installer.
 
@@ -19,9 +19,10 @@ This will install [VS Code](https://code.visualstudio.com/) with the [WPILib](ht
 
 ## Repos
 
-All of our code is stored on a website called GitHub in collections called "repos" (short for repositories).  A repo has a complete record of all the changes ever made, so you can see who made each change and check out code at any stage of development.  At the moment, we're actively working in one repo:
+All of our code is stored on a website called GitHub in collections called "repos" (short for repositories).  A repo has a complete record of all the changes ever made, so you can see who made each change and check out code at any stage of development.  At the moment, we're actively working in two repos:
 
  - [2022-robot](https://github.com/frc5687/2022-robot) => Code for this season's competition robot.
+ - [2022-pizza](https://github.com/frc5687/2022-pizza) => Code for this season's chassis robot (for testing code and practicing driving).
 
 ### Cloning Repos
 

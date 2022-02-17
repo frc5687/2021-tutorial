@@ -5,13 +5,15 @@ Exam Level | License | Competencies
 1 | Level 1 Operator | Safely control the robot
 2 | Level 2 Operator | Deploy code to the robot
 3 | Tuner | Tune the robot
-4 | Level 1 Programmer | Code simple subsystems
+4 | Level 1 Programmer | Modify code
+5 | Level 2 Programmer | Code simple subsystems
+6 | Level 3 Programmer | Add new hardware
 
-Each controls exam for the 2021-2022 season is conducted hands on with the chassis bot or the competition bot. A team mentor must sign off on the exam before a student earns a level.  Students must be able to complete every exam task independently to pass.
+Each controls exam for the 2021-2022 season is conducted hands on with the pizza bot or the competition bot. A team mentor must sign off on the exam before a student earns a level.  Students must be able to complete every exam task independently to pass.
 
 From time to time we add or remove exam tasks.  We track these with a revision letter (A through Z).  For example, for revision B of the level one exam we have added knowing how to find the version of the code running on the robot.
 
-# Level One Controls Exam
+# Level One Controls Exam: Basic Robot Control
 
 A level one operator can safely control the robot using robot code provided by higher level operators, tuners and programmers.
 
@@ -73,7 +75,7 @@ These tasks have been added to the exam since Revision A:
 - Note which version of code is running on the robot.
 - Log drive session.
 
-# Level Two Controls Exam
+# Level Two Controls Exam: Deploying Code
 
 A level two operator can safely deploy code to the robot to test configurations and features under development by tuners and programmers.
 
@@ -114,7 +116,7 @@ These tasks have been added to the exam since Revision A:
 - Show a GitGraph of all the branches in the repo.
 - Build robot code.
 
-# Level Three Controls Exam
+# Level Three Controls Exam: Tuning the Robot
 
 A tuner can adjust code parameters to change the behavior of the robot.
 
@@ -125,11 +127,26 @@ A tuner can adjust code parameters to change the behavior of the robot.
 - Adjust the limelight values.
 - Adjust the direction the wheels on the drive train point and spin.
 
-# Level Four Controls Exam
+# Level Four Controls Exam: Modifying Code
 
-A level one programmer can write new code to add features or control new hardware added to the robot.
+A level one programmer can modify existing code.
+
+- Modify commands to run subsystems based on operator input.
+- Modify an autonomous command to run a subsystem for a set duration.
+- Modify an autonomous command to run a subsystem until the sensor is triggered.
+
+# Level Five Controls Exam: Simple Subsystems
+
+A level two programmer can write new code for simple subsystems.
 
 - Create a subsystem with one sensor and one actuator.
 - Create a default command to run the subsystem based on operator input.
 - Create an autonomous command to run the subsystem for a set duration.
 - Create an autonomous command to run the subsystem until the sensor is triggered.
+
+# Level Six Controls Exam: Adding New Hardware
+
+A level three programmer can upgrade or add new hardware to the robot.
+
+- Flash an image onto the roboRIO.
+- Assign IP addresses to robot hardware.
